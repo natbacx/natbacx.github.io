@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f2f2f2;
+}
+header {
+  padding: 2rem;
+  text-align: center;
+  background-color: #1e1e1e;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  border-left: 4px solid #00ffaa;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  color: #00ffaa;
+}
+.projetos a {
+  display: block;
+  margin: 1rem 0;
+  color: #00ffaa;
+  text-decoration: none;
+  font-weight: bold;
+}
+.contato {
+  text-align: center;
+  margin-top: 2rem;
+}
