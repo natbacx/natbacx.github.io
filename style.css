@@ -142,3 +142,24 @@ h2 {
 .sobre-texto {
   flex: 1;
 }
+
+/* Comntato */
+.email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #5a3e85; /* lilás escuro */
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.email-link:hover {
+  color: #8b5fcf;
+}
+
+.email-icon {
+  width: 20px;
+  height: 20px;
+}
