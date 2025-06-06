@@ -1,13 +1,96 @@
 body {
+  background: linear-gradient(-45deg, #f3e7fa, #f9f6fb, #e7eafc, #e5e6f7);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.decor {
+  position: absolute;
+  width: 40px;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Animation (efeito natural) */
+.decor1 {
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+.decor2 {
+  top: 30%;
+  left: 70%;
+  animation-delay: 1s;
+}
+.decor3 {
+  top: 55%;
+  left: 20%;
+  animation-delay: 2s;
+}
+.decor4 {
+  top: 75%;
+  left: 80%;
+  animation-delay: 0.5s;
+}
+.decor5 {
+  top: 90%;
+  left: 50%;
+  animation-delay: 1.5s;
+}
+
+.decor {
+  position: absolute;
+  width: 40px;
+  transition: transform 0.1s ease-out;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: -1; /* mantido no fundo */
+}
+
+nav {
+  background: #1e1e1e;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #f2f2f2;
+  padding: 0;
+}
+nav a {
+  color: #c300ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #9425df;
 }
 header {
   padding: 2rem;
   text-align: center;
-  background-color: #1e1e1e;
+  background-color: #292626;
 }
 header h1 {
   margin: 0;
@@ -16,7 +99,7 @@ header h1 {
 header p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
-  color: #aaa;
+  color: #9425df;
 }
 section {
   padding: 2rem;
@@ -24,19 +107,38 @@ section {
   margin: auto;
 }
 h2 {
-  border-left: 4px solid #00ffaa;
+  border-left: 4px solid #cc2bec;
   padding-left: 1rem;
   margin-bottom: 1rem;
-  color: #00ffaa;
+  color: #910bcf;
 }
 .projetos a {
   display: block;
   margin: 1rem 0;
-  color: #00ffaa;
+  color: #9d4cd3;
   text-decoration: none;
   font-weight: bold;
 }
 .contato {
   text-align: center;
   margin-top: 2rem;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sobre-img img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: block;
+}
+
+.sobre-texto {
+  flex: 1;
 }
